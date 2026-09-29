@@ -34,6 +34,9 @@
     margin-bottom: 3%;
     border-radius: 8px;
 }
+#button:active{
+    background: #48ba48;
+}
 .btn:hover{
     background-color: rgb(191 190 190 / 0.71);
 }
@@ -63,4 +66,8 @@ input[type='text']{
 }
 input[type='text']:focus {
     outline: 2px solid #007bff;
+}
+
+#canvas{
+    border: black solid 2px;
 }
