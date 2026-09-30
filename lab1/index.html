@@ -10,10 +10,10 @@
 <body>
 
 <header class="header">
-    <h1 class="student_name">Иванов Иван Иванович</h1>
+    <h1 class="student_name">Бобков Григорий Дмитриевич</h1>
     <div class="student_info">
-        <span class="group">P111</span>
-        <span class="variant">Вариант: 555333</span>
+        <span class="group">P3212</span>
+        <span class="variant">Вариант: 12685</span>
     </div>
 </header>
 
@@ -23,17 +23,18 @@
 
         </canvas>
 
-        <form class="form">
+        <form id="form_id" class="form">
+            <div id="error-box" style="color: red; display: none;"></div>
            <ul class="buttons_list_X">
-               <li><button type="button" class="btn">-2</button> </li>
-               <li><button type="button" class="btn">-1.5</button> </li>
-               <li><button type="button" class="btn">-1</button> </li>
-               <li><button type="button" class="btn">-0.5</button> </li>
-               <li><button type="button" class="btn">0</button> </li>
-               <li><button type="button" class="btn">0.5</button> </li>
-               <li><button type="button" class="btn">1</button> </li>
-               <li><button type="button" class="btn">1.5</button> </li>
-               <li><button type="button" class="btn">2</button> </li>
+               <li><button type="button" class="btn x-btn" value="-2">-2</button> </li>
+               <li><button type="button" class="btn x-btn" value="-1.5">-1.5</button> </li>
+               <li><button type="button" class="btn x-btn" value="-1">-1</button> </li>
+               <li><button type="button" class="btn x-btn" value="-0.5">-0.5</button> </li>
+               <li><button type="button" class="btn x-btn" value="0">0</button> </li>
+               <li><button type="button" class="btn x-btn" value="0.5">0.5</button> </li>
+               <li><button type="button" class="btn x-btn" value="1">1</button> </li>
+               <li><button type="button" class="btn x-btn" value="1.5">1.5</button> </li>
+               <li><button type="button" class="btn x-btn" value="2">2</button> </li>
            </ul>
 
             <div class="field_Y">
@@ -78,5 +79,7 @@
 
 <script src="script.js"></script>
 <script src="validation.js"></script>
+<script src="other.js"></script>
+<script src="submittingForm.js"></script>
 </body>
 </html>
