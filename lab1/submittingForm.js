@@ -1,8 +1,8 @@
 function checkHit(x, y, r) {
     const halfR = r / 2;
-    const inRectangle = (x <= 0 && x >= -r) && (y >= 0 && y <= halfR);
+    const inRectangle = (x <= 0 && x >= -r) && (y <= 0 && y >= -halfR);
     const inTriangle = (x >= 0) && (y >= 0) && (x + y <= r);
-    const inSector = (x <= 0 && y <= 0) && (x * x + y * y <= halfR * halfR);
+    const inSector = (x <= 0 && y >= 0) && (x * x + y * y <= halfR * halfR);
     return inRectangle || inTriangle || inSector;
 }
 
